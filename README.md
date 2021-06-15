@@ -34,11 +34,61 @@ The following gateways are provided by this package:
     ]);
 ```
 
+### Authentication
+Detail: https://docs.any.money/en/auth/
 #### Get Balance
 
 ```php
     $balance = $gateway->balance(['curr'=>'USD'])->send();
     if($balance->isSuccessful()){
+        var_dump($balance->getResult());
+    } else {
+        var_dump($balance->getError());
+        var_dump($balance->getMessage());
+    }
+```
+
+### Invoice
+Detail: https://docs.any.money/en/invoice/
+#### Create invoice
+
+```php
+    $invoice = $gateway->invoice([
+        'amount'     => 10,
+        'externalid' => '1001',//must be unique each call
+        'in_curr'    => 'USD',
+    ])->create();
+    if($invoice->isSuccessful()){
+        var_dump($balance->getRedirectUrl());
+        var_dump($balance->getData());
+    } else {
+        var_dump($balance->getError());
+        var_dump($balance->getMessage());
+    }
+```
+
+#### Calc invoice
+
+```php
+    $invoice = $gateway->invoice([
+        'amount'     => 10,
+        'in_curr'    => 'USD',
+    ])->calc();
+    if($invoice->isSuccessful()){
+        var_dump($balance->getResult());
+    } else {
+        var_dump($balance->getError());
+        var_dump($balance->getMessage());
+    }
+```
+
+#### Get invoice
+
+```php
+    $invoice = $gateway->invoice([
+        'externalid' => '1001',
+    ])->get();
+    if($invoice->isSuccessful()){
         var_dump($balance->getResult());
     } else {
         var_dump($balance->getError());

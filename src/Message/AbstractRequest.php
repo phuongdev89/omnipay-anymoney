@@ -88,7 +88,7 @@ abstract class AbstractRequest extends BaseAbstractRequest {
 			'method'  => $method,
 			'params'  => $data,
 			'jsonrpc' => '2.0',
-			'id'      => 1,
+			'id'      => '1',
 		];
 	}
 

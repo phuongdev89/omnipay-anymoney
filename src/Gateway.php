@@ -11,6 +11,7 @@
 namespace Omnipay\AnyMoney;
 
 use Omnipay\AnyMoney\Message\BalanceRequest;
+use Omnipay\AnyMoney\Message\InvoiceRequest;
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\Common\Message\NotificationInterface;
@@ -122,5 +123,17 @@ class Gateway extends AbstractGateway {
 		$parameters['merchant'] = $this->getMerchant();
 		$parameters['api_key']  = $this->getApiKey();
 		return $this->createRequest(BalanceRequest::class, $parameters);
+	}
+
+	/**
+	 * @param $parameters
+	 *
+	 * @return AbstractRequest
+	 */
+	public function invoice($parameters) {
+		$parameters['endpoint'] = $this->getEndpoint();
+		$parameters['merchant'] = $this->getMerchant();
+		$parameters['api_key']  = $this->getApiKey();
+		return $this->createRequest(InvoiceRequest::class, $parameters);
 	}
 }
