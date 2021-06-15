@@ -1,0 +1,32 @@
+{
+	"name" : "phuong17889/omnipay-anymoney",
+	"description" : "Any.Money driver for the Omnipay payment processing library",
+	"keywords" : [
+		"gateway",
+		"merchant",
+		"omnipay",
+		"pay",
+		"payment",
+		"payments"
+	],
+	"homepage" : "https://github.com/phuong17889/omnipay-anymoney",
+	"type" : "library",
+	"license" : "BSD-3-Clause",
+	"authors" : [
+		{
+			"name" : "Le Phuong",
+			"email" : "phuong17889@gmail.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0",
+		"ext-json" : "*",
+		"ext-curl" : "*",
+		"omnipay/common" : "^3.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Omnipay\\AnyMoney\\" : "src"
+		}
+	}
+}
