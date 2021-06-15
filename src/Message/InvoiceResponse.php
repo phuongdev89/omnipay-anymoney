@@ -30,6 +30,16 @@ class InvoiceResponse extends AbstractResponse {
 	/**
 	 * @return mixed
 	 */
+	public function getField() {
+		if (!$this->isSuccessful()) {
+			return $this->data['error']['data']['field'];
+		}
+		return '';
+	}
+
+	/**
+	 * @return mixed
+	 */
 	public function getError() {
 		return $this->data['error'];
 	}
