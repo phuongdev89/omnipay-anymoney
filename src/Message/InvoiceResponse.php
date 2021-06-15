@@ -88,7 +88,7 @@ class InvoiceResponse extends AbstractResponse {
 	 * @return bool
 	 */
 	public function isRedirect() {
-		if ($this->method == 'invoice.create') {
+		if ($this->method == 'invoice.create' || ($this->method == 'invoice.get' && $this->getStatus() != 'done')) {
 			return $this->isSuccessful();
 		}
 		return false;
