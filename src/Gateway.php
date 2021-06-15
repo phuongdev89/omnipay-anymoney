@@ -116,7 +116,7 @@ class Gateway extends AbstractGateway {
 	/**
 	 * @param $parameters
 	 *
-	 * @return AbstractRequest
+	 * @return AbstractRequest|BalanceRequest
 	 */
 	public function balance($parameters) {
 		$parameters['endpoint'] = $this->getEndpoint();
@@ -128,7 +128,7 @@ class Gateway extends AbstractGateway {
 	/**
 	 * @param $parameters
 	 *
-	 * @return AbstractRequest
+	 * @return AbstractRequest|InvoiceRequest
 	 */
 	public function invoice($parameters) {
 		$parameters['endpoint'] = $this->getEndpoint();

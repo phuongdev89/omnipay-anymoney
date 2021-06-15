@@ -55,6 +55,36 @@ class InvoiceResponse extends AbstractResponse {
 	}
 
 	/**
+	 * @return mixed|string
+	 */
+	public function getStatus() {
+		if ($this->isSuccessful()) {
+			return $this->getResult()['status'];
+		}
+		return '';
+	}
+
+	/**
+	 * @return mixed|string
+	 */
+	public function getToken() {
+		if ($this->isSuccessful()) {
+			return $this->getResult()['token'];
+		}
+		return '';
+	}
+
+	/**
+	 * @return mixed|string
+	 */
+	public function getLid() {
+		if ($this->isSuccessful()) {
+			return $this->getResult()['lid'];
+		}
+		return '';
+	}
+
+	/**
 	 * @return bool
 	 */
 	public function isRedirect() {

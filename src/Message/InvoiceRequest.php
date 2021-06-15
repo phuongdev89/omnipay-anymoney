@@ -246,7 +246,7 @@ class InvoiceRequest extends AbstractRequest {
 	}
 
 	/**
-	 * @return ResponseInterface
+	 * @return ResponseInterface|InvoiceResponse
 	 * @throws InvalidRequestException
 	 */
 	public function create() {
@@ -256,7 +256,7 @@ class InvoiceRequest extends AbstractRequest {
 	}
 
 	/**
-	 * @return ResponseInterface
+	 * @return ResponseInterface|InvoiceResponse
 	 * @throws InvalidRequestException
 	 */
 	public function calc() {
@@ -266,7 +266,7 @@ class InvoiceRequest extends AbstractRequest {
 	}
 
 	/**
-	 * @return ResponseInterface
+	 * @return ResponseInterface|InvoiceResponse
 	 * @throws InvalidRequestException
 	 */
 	public function get() {
