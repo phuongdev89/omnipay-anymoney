@@ -1,5 +1,5 @@
 {
-	"name" : "phuong17889/omnipay-anymoney",
+	"name" : "phuongdev89/omnipay-anymoney",
 	"description" : "Any.Money driver for the Omnipay payment processing library",
 	"keywords" : [
 		"gateway",
@@ -9,13 +9,13 @@
 		"payment",
 		"payments"
 	],
-	"homepage" : "https://github.com/phuong17889/omnipay-anymoney",
+	"homepage" : "https://github.com/phuongdev89/omnipay-anymoney",
 	"type" : "library",
 	"license" : "BSD-3-Clause",
 	"authors" : [
 		{
-			"name" : "Le Phuong",
-			"email" : "phuong17889@gmail.com"
+			"name" : "Phuong Dev",
+			"email" : "phuongdev89@gmail.com"
 		}
 	],
 	"require" : {

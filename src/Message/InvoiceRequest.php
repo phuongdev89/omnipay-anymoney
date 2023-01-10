@@ -1,9 +1,8 @@
 <?php
 /**
- * Created by FES VPN.
  * @project omnipay-anymoney
- * @author  Le Phuong
- * @email   phuong17889[at]gmail.com
+ * @author  Phuong Dev
+ * @email   phuongdev89@gmail.com
  * @date    6/15/2021
  * @time    3:08 PM
  */

@@ -9,13 +9,13 @@ The preferred way to install this library is through [composer](http://getcompos
 Either run
 
 ```
-$ php composer.phar require phuong17889/omnipay-anymoney "*"
+$ php composer.phar require phuongdev89/omnipay-anymoney "*"
 ```
 
 or add
 
 ```
-"phuong17889/omnipay-anymoney": "*"
+"phuongdev89/omnipay-anymoney": "*"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -109,4 +109,4 @@ If you want to keep up to date with release anouncements, discuss ideas for the 
 there is also a [mailing list](https://groups.google.com/forum/#!forum/omnipay) which you can subscribe to.
 
 If you believe you have found a bug, please report it using
-the [GitHub issue tracker](https://github.com/phuong17889/omnipay-anymoney/issues).
+the [GitHub issue tracker](https://github.com/phuongdev89/omnipay-anymoney/issues).
